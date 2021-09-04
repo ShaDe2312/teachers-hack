@@ -1,0 +1,64 @@
+html{
+    height: 100%;
+    background: linear-gradient(#ee9ca7 , #ffdde1);
+}
+
+#main{
+    height: 71vh;
+    width:30vw;
+    border: 2px solid black;
+    margin: auto;
+    margin-top: 10vh;
+    border-radius: 5vh;
+}
+
+#heading{
+    text-align: center;
+}
+
+#underline{
+    width: 29.7vw;
+    height: 0px;
+    border: 2px solid black;
+    overflow: hidden;
+}
+
+.detailname{
+    font-size: large;
+    font-weight: bold;
+    margin-left: 1vw;
+    margin-bottom: 0px;
+}
+
+.login-detail{
+    margin-left: 2vw;
+    margin-top: 1vh;
+    height:5vh;
+    width: 25vw;
+    border-radius: 12px;
+    box-shadow: inset gray 2px 2px 2px ;
+    padding-left: 10px;
+    font-weight: bold;
+    color:darkslategray;
+}
+
+#btn-submit{
+    height: 7vh;
+    width: 15vw;
+    margin-top: 5vh;
+    margin-left: 7vw;
+    border: 2px solid Black;
+    border-radius: 15px;
+    /* background: linear-gradient(270deg,#ee9ca7 , #ffdde1); */
+    background-color: blanchedalmond;
+}
+
+#btn-submit:hover{
+    transform: translate(-1px,-1px);
+    transition-duration: 300ms;
+}
+
+#btn-submit:active{
+    transform: translate(1px,1px);
+    transition-duration: 100ms;
+}
