@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='style.css') }}">
     <title>NSQ</title>
 </head>
 <body>
@@ -16,18 +16,18 @@
     </div>
 
     <div class="infobox">
-        <img src="img/mask.png" alt="A mask, depicting anonymity">
+        <img src="{{ url_for('static',filename='img/mask.png') }}" alt="A mask, depicting anonymity">
         <p class= "boxtext">Ask questions anonymously</p>
     </div>
 
     <div class="infobox">
-        <img src="img/teacher.png" alt="A teacher">
+        <img src="{{ url_for('static',filename='img/teacher.png') }}" alt="A teacher">
         <p class="boxtext">Answer questions on the spot</p>
     </div>
 
     <div id="logincontainer">
-    <button class="login">Login as a Student</button>
-    <button class="login">Login as a Teacher</button>
+    <button class="login"><a style="color:black; text-decoration: none;" href="{{url_for('loginHandler')}}">Login as a Student</a></button>
+    <button class="login"><a href="{{url_for('loginHandler')}}">Login as a Teacher</a></button>
     </div>
     <!-- <div>Icons made by <a href="https://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div> -->
     <!-- <div>Icons made by <a href="https://www.flaticon.com/authors/monkik" title="monkik">monkik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div> -->
