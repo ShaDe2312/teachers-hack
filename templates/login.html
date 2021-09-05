@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="{{url_for('static' , 'loginstyle.css')}}">
+    <link rel="stylesheet" href="{{url_for('static' , filename='loginstyle.css')}}">
     <title>NSQ</title>
 </head>
 <body>
@@ -12,10 +12,12 @@
         <h1 id="heading">Login to NSQ</h1>
         <div id="underline"></div>
         <p class="detailname">Email</p>
-        <input type="email" name="Email" class="login-detail">
+        <form action="" method="POST">
+        <input type="email" name="Email" class="login-detail" value="{{request.form.email}}">
         <p class="detailname">Password</p>
-        <input type="password" name="Password" class="login-detail">
-        <button type="submit" id="btn-submit">Submit</button>
+        <input type="password" name="Password" class="login-detail" value="{{request.form.password}}">
+        <button type="submit" id="btn-submit" value="login">Submit</button>
+    </form>
     </div>
 </body>
 </html>
